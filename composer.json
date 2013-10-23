@@ -2,7 +2,7 @@
     "name": "pulpmedia/pulpcache",
     "type": "library"
     "description": "A simple Cache class",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "keywords": [],
     "license": "MIT",
     "authors": [
