@@ -1,6 +1,6 @@
 {
     "name": "pulpmedia/pulpcache",
-    "type": "library"
+    "type": "library",
     "description": "A simple Cache class",
     "version": "1.0.0",
     "keywords": [],
