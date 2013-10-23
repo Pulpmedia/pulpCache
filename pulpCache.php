@@ -15,9 +15,7 @@ class pulpCache {
 		if (is_array($config)) {
 			$this -> config = array_merge($this -> config, $config);
 		}
-		if (!$this -> getConfig()) {
-			$this -> createConfigFile();
-		} else {
+		if ($this -> getConfig()) {
 			$this -> config = array_merge($this -> config, $this -> getConfig());
 		}
 	}
@@ -91,7 +89,7 @@ class pulpCache {
 			return false;
 		$config = $this -> getConfigRaw();
 		if (!isset($config[$this -> config['cache_name']]))
-			return false;
+			return array();
 		return $config[$this -> config['cache_name']];
 	}
 
