@@ -1,17 +1,24 @@
 {
-    "name": "pulpmedia/pulpcache",
-    "type": "library",
-    "description": "A simple Cache class",
-    "version": "1.0.0-dev",
-    "keywords": [],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Alexandre",
-            "email": "alexandre@pulpmedia.at"
-        }
-    ],
-    "require": {
-
-    }
+	"name": "pulpmedia/pulpcache",
+	"type": "library",
+	"description": "A simple Cache class",
+	"keywords": ["Caching"],
+	"homepage": "https://github.com/Pulpmedia/pulpCache",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Alexandre",
+			"email": "alexandre@pulpmedia.at"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">=5.2.*"
+	},
+	"target-dir": "pulpCache",
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	}
 }
