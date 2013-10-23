@@ -1,0 +1,17 @@
+{
+    "name": "pulpmedia/pulpcache",
+    "type": "library"
+    "description": "A simple Cache class",
+    "version": "0.0.1",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandre",
+            "email": "alexandre@pulpmedia.at"
+        }
+    ],
+    "require": {
+
+    }
+}
