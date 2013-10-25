@@ -2,7 +2,7 @@
 
 class pulpCache {
 
-	private $config = array('cache_dir' => "cache", "config_file" => "config.json", "expire_at" => 0, "cache_file" => 'empty.tmp', 'ttl' => 86400);
+	private $config = array('cache_dir' => "cache", "config_file" => "config.json", "expire_at" => 0, "cache_file" => 'empty.tmp', "cache_name" => "cache",'ttl' => 86400);
 
 	private $file;
 
@@ -67,14 +67,6 @@ class pulpCache {
 		return $this -> load($file);
 	}
 
-	private function load($file) {
-		return file_get_contents($file);
-	}
-
-	private function save($filename, $data) {
-		return file_put_contents($filename, $data);
-	}
-
 	public function createDir() {
 		mkdir($this -> getDir());
 	}
@@ -110,4 +102,13 @@ class pulpCache {
 		return $this -> getDir() . $this -> config["config_file"];
 	}
 
+	private function load($file) {
+		//TODO: Check if file_get_contents is available, else use fopen
+		return file_get_contents($file);
+	}
+
+	private function save($filename, $data) {
+		//TODO: Check if file_put_contents is available, else use fopen
+		return file_put_contents($filename, $data);
+	}
 }
