@@ -4,7 +4,6 @@ class pulpCache {
 
 	private $config = array('cache_dir' => "cache", "config_file" => "config.json", "expire_at" => 0, "cache_file" => 'empty.tmp', "cache_name" => "cache",'ttl' => 86400);
 
-	private $file;
 
 	public function __construct($config = null) {
 		$this -> configure($config);
@@ -99,12 +98,6 @@ class pulpCache {
 
 	/*** CONFIG ***/
 	
-	/**
-	 * Creates the Cache Config File
-	 */
-	private function createConfigFile() {
-		$this -> save($this -> getConfigFile(), "");
-	}
 
 	/**
 	 * Returns the Config for the current Cache Name
@@ -144,7 +137,6 @@ class pulpCache {
 	 * @return string
 	 */
 	private function load($file) {
-		//TODO: Check if file_get_contents is available, else use fopen or other
 		return file_get_contents($file);
 	}
 
@@ -153,7 +145,6 @@ class pulpCache {
 	 * @return boolean
 	 */
 	private function save($filename, $data) {
-		//TODO: Check if file_put_contents is available, else use fopen or other
 		return file_put_contents($filename, $data);
 	}
 }
