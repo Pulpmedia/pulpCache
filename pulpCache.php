@@ -1,6 +1,6 @@
 <?php
 
-class pulpCache {
+class PulpCache {
 
 	private $config = array('cache_dir' => "cache", "config_file" => "config.json", "expire_at" => 0, "cache_file" => 'empty.tmp', "cache_name" => "cache",'ttl' => 86400);
 
