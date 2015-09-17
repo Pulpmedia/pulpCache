@@ -24,7 +24,7 @@ There are a few options you can add as an array:
 #####Example
 	<?php
 	
-	requite_once(dirname(__FILE)) . 'pulpcache/pulpCache.php');
+	require_once(dirname(__FILE)) . 'pulpcache/pulpCache.php');
 	
 	$config = new array('cache_dir' => '/path/to/cache/dir',
 						 'cache_name' => 'file_to_cache',
